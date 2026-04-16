@@ -155,7 +155,7 @@ export default function SupervisorShortageVerify() {
     return (
         <>
             {/* Header Block */}
-            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 bg-white border-b border-slate-100 py-1 px-2 mb-6">
+            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-1 bg-white border-b border-slate-100 py-1 px-2 mb-2">
                 <h1 className="text-[24px] font-black text-ind-text tracking-tight leading-none">
                     Verify Shortage Requests
                 </h1>
@@ -185,7 +185,7 @@ export default function SupervisorShortageVerify() {
             </div>
 
             {/* Filter Bar */}
-            <div className="flex flex-col lg:flex-row items-center gap-2 mb-6">
+            <div className="flex flex-col lg:flex-row items-center justify-end gap-1 mb-2 mx-1">
                 <div className="relative z-20">
                     <button
                         onClick={() => setIsStatusOpen(!isStatusOpen)}
@@ -218,7 +218,7 @@ export default function SupervisorShortageVerify() {
                     )}
                 </div>
 
-                <div className="relative flex-1 max-w-sm w-full">
+                <div className="relative w-full lg:w-80">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
                     <input
                         type="text"
@@ -268,7 +268,7 @@ export default function SupervisorShortageVerify() {
             </div>
 
             {/* Data Table Wrapper */}
-            <div className="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm">
+            <div className="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm mx-1">
                 {/* Table Header */}
                 <div className="grid grid-cols-[2.5fr_1.5fr_1.5fr_120px] gap-4 px-6 py-3 bg-white border-b-2 border-[#f37021] sticky top-0 z-10 items-center">
                     <p className="text-xs font-bold uppercase text-black tracking-wider">Request</p>
@@ -318,7 +318,7 @@ export default function SupervisorShortageVerify() {
                                 </div>
 
                                 {/* Actions Col */}
-                                <div className="flex items-center justify-end gap-3 pr-4">
+                                <div className="flex items-center justify-end gap-0.5 pr-4">
                                     <button
                                         onClick={() => setDetailRow(detailRow?.id === entry.id ? null : entry)}
                                         className="p-1.5 text-gray-500 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all border border-transparent hover:border-orange-200"

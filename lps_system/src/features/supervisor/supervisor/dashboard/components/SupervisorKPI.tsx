@@ -20,7 +20,7 @@ export const SupervisorKPI = ({
 
     const kpis = [
         {
-            label: 'Total DEOs',
+            label: 'TOTAL DEOS',
             value: totalDeos,
             icon: <Users size={16} />,
             badgeText: 'LIVE',
@@ -28,7 +28,7 @@ export const SupervisorKPI = ({
             path: null,
         },
         {
-            label: 'Pending Production Logs',
+            label: 'PENDING PRODUCTION LOGS',
             value: awaitingReview,
             icon: <ClipboardCheck size={16} />,
             badgeText: 'AWAITING ACTION',
@@ -36,7 +36,7 @@ export const SupervisorKPI = ({
             path: null,
         },
         {
-            label: 'Shortage Verified',
+            label: 'SHORTAGE VERIFIED',
             value: verifiedShortages,
             icon: <ClipboardCheck size={16} />,
             badgeText: 'COMPLETED',
@@ -44,7 +44,7 @@ export const SupervisorKPI = ({
             path: '/supervisor/shortage',
         },
         {
-            label: 'Verify Shortage Requests',
+            label: 'VERIFY SHORTAGE REQUESTS',
             value: pendingShortages,
             icon: <Clock size={16} />,
             badgeText: 'ACTION NEEDED',
@@ -52,7 +52,7 @@ export const SupervisorKPI = ({
             path: '/supervisor/shortage',
         },
         {
-            label: 'Rejected Shortage Request',
+            label: 'REJECTED SHORTAGE REQUESTS',
             value: rejectedShortages,
             icon: <AlertTriangle size={16} />,
             badgeText: 'ALERT',
@@ -89,7 +89,7 @@ export const SupervisorKPI = ({
                         `}
                     >
                         <div className="flex justify-between items-center">
-                            <span className="text-[0.6rem] font-medium text-black [font-variant:small-caps]">{kpi.label}</span>
+                            <span className="text-[0.6rem] font-bold text-black tracking-wider uppercase">{kpi.label}</span>
                             <div className="flex items-center gap-2">
                                 <span className={`inline-block px-3 py-0.5 rounded-lg text-[0.55rem] font-black [font-variant:small-caps] tracking-widest ${colors.badge}`}>
                                     {kpi.badgeText}
